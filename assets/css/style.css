@@ -106,6 +106,18 @@
       background-position: 80%;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: solid white;
+      border-top: solid white;
+    }
+    
+    .glaxybg {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .aboutmeh2 {
+      text-align: center;
     }
     
     /* Hero Style Start */
@@ -249,14 +261,18 @@
     content: "";
   }
   
+    .intro h2 {
+      text-align: center
+    }
     .intro p {
         line-height: 1.7;
-        color: #39a6b2;
+        color: white;
         width: 80%;
         font-size: 20px;
         margin: 0 auto;
         text-align: center;
     }
+
 
     .section-title {
       font-size: 48px;
