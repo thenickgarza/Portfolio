@@ -5,8 +5,8 @@
   }
   
   * {
-      margin: 0;
-      padding: 0;
+      margin: 0px;
+      padding: 0px;
       box-sizing: border-box;
     }
     
@@ -106,13 +106,14 @@
       background-position: 80%;
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       border-bottom: solid white;
       border-top: solid white;
+      
     }
     
     .glaxybg {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
@@ -262,7 +263,8 @@
   }
   
     .intro h2 {
-      text-align: center
+      text-align: center;
+      display: inline-grid;
     }
     .intro p {
         line-height: 1.7;
@@ -276,7 +278,7 @@
 
     .section-title {
       font-size: 48px;
-      color: #024e76;
+      color: white;
       border-bottom: 3px solid;
       padding-bottom: 20px;
       text-align: center;
@@ -284,7 +286,7 @@
       width: 50%;
     }
     .primary-border {
-      border-color: #fce138;
+      border-color: black;
     }
     .secondary-border {
       border-color: #39a6b2;
