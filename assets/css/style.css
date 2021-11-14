@@ -14,6 +14,12 @@
       /* more on this crazy alphanumerical value in a minute! */
       color: var(--tertiary-color);
       font-family: Helvetica, Arial, sans-serif;
+      background-image: url("../images/galaxybg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-position: 80%;
+      z-index: 9999;
     }
     
     /* apply styles to <header> */
@@ -72,12 +78,13 @@
     }
     
     footer {
-      background: var(--primary-color);
+      /* background: var(--primary-color); */
       width: 100%;
       padding: 40px 35px;
       flex-wrap: wrap;
       justify-content: space-between;
       display: flex;
+      /* background-image: url("../images/galaxybg.jpg"); */
     }
     
     footer h2 {
@@ -106,7 +113,6 @@
       background-position: 80%;
       display: flex;
       justify-content: space-between;
-      border-bottom: solid white;
       border-top: solid white;
       
     }
@@ -115,6 +121,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-content: center;
+      padding-left: 90px;
     }
 
     .aboutmeh2 {
@@ -373,9 +381,7 @@
     .trainer-bio p {
       font-size: 17px;
     }
-    .contact {
-      background: #024e76;
-    }
+    
     .contact-info {
       display: flex;
       justify-content: space-between;
