@@ -277,13 +277,11 @@
 
 
     .section-title {
-      font-size: 48px;
-      color: white;
-      border-bottom: 3px solid;
-      padding-bottom: 20px;
-      align-content: center;
-      margin: 0 auto 35px auto;
-      width: 50%;
+       font-size: 48px;
+       color: white;
+       width: 50%;
+       text-decoration: underline 5px black;
+       align-content: center;
     }
     .primary-border {
       border-color: black;
