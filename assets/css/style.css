@@ -114,7 +114,6 @@
       display: flex;
       justify-content: space-between;
       border-top: solid white;
-      
     }
     
     .glaxybg {
@@ -123,10 +122,7 @@
       justify-content: space-between;
       align-content: center;
       padding-left: 90px;
-    }
-
-    .aboutmeh2 {
-      text-align: center;
+      width: auto;
     }
 
     .runbuddypic a img {
@@ -238,9 +234,6 @@
     .secondary-border {
       border-color: #39a6b2;
     }
-    .steps {
-
-    }
     .step {
       margin: 50px auto;
       padding-bottom: 50px;
@@ -320,6 +313,7 @@
       line-height: 1.5;
       font-size: large;
       font-style: normal;
+      flex-wrap: wrap;
     }
     .contact-info a {
       color: white;
@@ -357,6 +351,7 @@
     }
     .flex-row {
       display: flex;
+      flex-wrap: wrap;
     }
     @media screen and (max-width: 980px) {
       header {
@@ -380,7 +375,24 @@
         text-align: center;
         width: 100%;
       }
-      
+      #about-me {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        align-content: center;
+      }
+      #my-work {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        align-content: center;
+      }
+      #contact-me {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        align-content: center;
+      }
       .hero-cta, .hero-form {
         width: 100%;
         text-align: center;
@@ -401,6 +413,9 @@
     @media screen and (max-width: 768px) {
       section {
         padding: 30px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 30px 30px 30px;
       }
       .step h3 {
         flex: 1 100%;
@@ -439,11 +454,12 @@
       }
     
       .contact-info {
-        text-align: center;
+        text-align: center
+        flex-wrap: wrap;
       }
     
       .contact-info > * {
-        flex: 0 100%;
+        flex: 1 100%;
       }
       .contact-form {
         order: 3;
