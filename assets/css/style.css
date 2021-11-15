@@ -49,7 +49,7 @@
     }
     header a {
       text-decoration: none;
-      color: white;
+      color: #32ff00;
     }
     
     header nav {
@@ -288,7 +288,7 @@
        font-size: 48px;
        color: white;
        width: 50%;
-       text-decoration: underline 5px black;
+       text-decoration: underline 5px #32ff00;
        align-content: center;
     }
     .primary-border {
@@ -469,6 +469,7 @@
         text-align: center;
         width: 100%;
       }
+      
       .hero-cta, .hero-form {
         width: 100%;
         text-align: center;
@@ -485,7 +486,6 @@
       .contact-info iframe {
         flex: 1 100%;
       }
-    }
     
     @media screen and (max-width: 768px) {
       section {
@@ -536,5 +536,4 @@
       }
       .contact-form {
         order: 3;
-    }   
-  }
+      }
