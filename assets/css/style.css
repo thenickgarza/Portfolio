@@ -118,12 +118,9 @@
     
     .glaxybg {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: center;
-      padding-left: 90px;
-      width: auto;
+      
     }
+    
 
     .runbuddypic a img {
       display: flex;

@@ -97,6 +97,13 @@
     
     section {
       padding: 60px;
+      align-content: center;
+      display: grid;
+      flex-wrap: wrap;
+      flex: 1 
+    }
+    address {
+      text-align: center;
     }
     
     /* Hero Style Start */
@@ -113,145 +120,22 @@
       background-attachment: fixed;
       background-position: 80%;
     }
-    .hero-cta {
-      width: 35%;
-      text-align: right;
-      margin: 3.5%;
-      color: #fff;
-      font-size: 18px;
-      line-height: 1.2;
+    .galaxybg1 {
+      display: flexbox
     }
     
-    .hero-cta h2 {
-      font-style: italic;
-      font-size: 55px;
-      color: #fce138;
-      text-shadow: 0 0 10px rgba (0, 0, 0, 0.5);
-    }
-    /* Hero Style End */
-    
-    .hero-form {
-      border: 3px solid #024e76;
-      background-color: rgba(252, 225, 56, 0.8);
-      padding: 20px;
-      color: #024e76;
-      width: 40%;
-      margin: 3.5%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-    }
-    
-    .hero-form h3 {
-      font-size: 24px;
-      margin: 0;
-    }
-    .hero-form p {
-      margin: 5px 0 15px 0;
-    }
-    
-    .form-input {
-      border: 1px solid #024e76;
-      display: block;
-      padding: 7px 15px;
-      font-size: 16px;
-      color: #024e76;
-      width: 100%;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.75);
-    }
-  
-    .form-input:focus {
-      background-color: rgba(255, 255, 255, 1);
-      outline: none;
-    }
-    
-    .hero-form label {
-      margin: 0 5px;
-    }
-    
-    .hero-form button {
-      color: #fce138;
-      background-color: #024e76;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 10px
-    }
-  
-    .hero-form button:hover {
-      background-color: #39a6b2;
-    }
-  
-    .checkbox-wrapper input, .radio-wrapper input {
-      opacity: 0;
-    }
-  
-    .checkbox-wrapper label, .radio-wrapper label {
-      position: relative;
-      left: auto;
-      margin: auto;
-      line-height: 1.6;
-    }
-  
-    .checkbox-wrapper label::before, .radio-wrapper label::before {
-      content: "";
-      height: 20px;
-      width: 20px;
-      background: rgba(255, 255, 255, 0.75);  
-      border: 1px solid #024e76;  
-      position: absolute;
-      top: -4px;
-      left: -23px;
-    }
-  
-    .radio-wrapper label::before {
-      border-radius: 50%;
-    }
-  
-    .radio-wrapper label::after {
-      content: "";
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #024e76;
-      position: absolute;
-      left: -20px;
-      top: -4px;
-      background-image: radial-gradient(circle, #39a6b2, #024e76);
-  
-    }
-  
-    .checkbox-wrapper label::after {
-      content: "";
-      height: 6px;
-      width: 14px;
-      border-left: 2px solid #024e76;
-      border-bottom: 2px solid #024e76;
-      position: absolute;
-      left: -20px;
-      top: 4px;
-      transform: rotate(-58deg);
+    .runbuddypic {
+      display: flex;
+      flex-wrap: wrap;
+      height: 200px; 
+      width: 200px;
     }
     
     .checkbox-wrapper input + label::after, 
   .radio-wrapper input + label::after {
     content: none;
-  }
-  
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
-    content: "";
-  }
-  
-    .intro p {
-        line-height: 1.7;
-        color: #39a6b2;
-        width: 80%;
-        font-size: 20px;
-        margin: 0 auto;
-        text-align: center;
-    }
+  } 
+    
     .section-title {
       font-size: 48px;
       color: #024e76;
@@ -267,101 +151,25 @@
     .secondary-border {
       border-color: #39a6b2;
     }
-    .steps {
-        background: #fce138;
-    }
-    .step {
-      margin: 50px auto;
-      padding-bottom: 50px;
-      width: 80%;
-      border-bottom: 1px solid #39a6b2;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .step:last-child {
-      border-bottom: none;
-    }
-    .step-info {
-      flex: 2 70%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .step-img {
-      flex: 1 12%;
-      margin-right: 20px;
-    }
-    .step-img img {
-      max-width: 100%
-    }
-    .step-text {
-      flex: 12;
-    }
-    .step h3 {
-        color: #024e76;
-        font-size: 46px;
-        flex: 1 30%;
-    }
-    .step-text p {
-        color: #39a6b2;
-        font-size: 18px;
-    }
-    .step-text h4 {
-      font-size: 26px;
-      line-height: 1.5;
-      color: #024e76;
-    }
-    .trainers {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .trainer {
-      margin: 20px;
-      background: #024e76;
-      color: #fce138;
-      flex: 1;
-    }
-    .trainer img {
-      width: 100%;
-      float: left;
-    }
-    .trainer-bio {
-      padding: 25px;
-      line-height: 1.3;
-    }
     .text-left {
       text-align: left;
     }
     .text-right {
       text-align: right;
     }
-    .trainer-bio h3 {
-      font-size: 28px;
-    }
-    .trainer-bio h4 {
-      font-weight: 26;
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
-    .trainer-bio p {
-      font-size: 17px;
-    }
-    .contact {
-      background: #024e76;
+    #contact-me {
+      text-align: center;
     }
     .contact-info {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      text-align: center;
     }
     .contact-info > * {
       flex: 1;
       margin: 15px;
+      text-align: center;
     }
     .contact h2 {
       color: #fce138;
@@ -371,6 +179,7 @@
     }
     .contact-info div {
       color: white;
+      text-align: center
     }
     .contact-info h3 {
       color:#fce138;
@@ -381,35 +190,7 @@
       line-height: 1.5;
       font-size: 16px;
       font-style: normal;
-    }
-    .contact-info a {
-      color: #fce138;
-    }
-    .contact-form input, .contact-form textarea {
-      border: 1px solid #024e76;
-      display: block;
-      padding: 7px 15px;
-      font-size: 16px
-      color #024e76;
-      width: 100%;
-      margin-bottom: 15px;
-      margin-top: 5px;
-      border-radius: 10px;
-      background-color: rgba(255,255,255, 0.75);
-    }
-    .contact-form input:focus, .contact-form textarea:focus {
-      background-color: rgba(255,255,255, 1);
-      outline: none;
-    }
-    .contact-form button {
-      width: 100%;
-      border: none;
-      background: #fce138;
-      color: #024e76;
       text-align: center;
-      padding: 15px 0;
-      font-size: 16px;
-      border-radius: 10px;
     }
   
     .contact-form button:hover {
@@ -419,11 +200,19 @@
     .flex-row {
       display: flex;
     }
+    div.profilepic img {
+      padding-left: 250px;
+      justify-content: center;
+    }
     @media screen and (max-width: 980px) {
       header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
+      }
+      section {
+        flex: 1
+        display: inline;
       }
       header h1 {
         width: 100%;
@@ -441,72 +230,33 @@
         text-align: center;
         width: 100%;
       }
-      .hero-cta, .hero-form {
-        width: 100%;
-        text-align: center;
+      div.profilepic img {
+        display: flexbox;
+        flex-wrap: wrap;
+        height: auto fit-content;
+        width: auto fit-content;
       }
-      .hero-form {
-        width: 100%;
+      .galaxybg1 {
+        align-content: center;
+        display: flex;
+        flex: 1
+      }    
+      ing .runbuddypic {
+        width: fit-content;
+        height: fit-content;
       }
       .section-title {
         width: 80%;
       }
-      .trainer {
-        flex: 0 70%;
+      .intro p {
+        width: 100%;
+        display: inline:
       }
-      .contact-info iframe {
-        flex: 1 100%;
-      }
-    }
-    
-    @media screen and (max-width: 768px) {
+     @media screen and (max-width: 768px) {
       section {
         padding: 30px 15px;
       }
-      .step h3 {
-        flex: 1 100%;
-        text-align: center;
-      }
-      .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-      }
-      .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-      .step-text {
-        flex: 100%;
-      }
-    }
-    @media  screen and (max-width: 575px) {
-      .hero-form button {
-        width: 100%;
-      }
-    
-      .section-title {
-        width: 95%;
-      }
-    
       .intro p {
         width: 100%;
+        display: inline:
       }
-    
-      .trainer {
-        flex: 0 100%;
-      }
-    
-      .contact-info {
-        text-align: center;
-      }
-    
-      .contact-info > * {
-        flex: 0 100%;
-      }
-      .contact-form {
-        order: 3;
-    }   
-  }
