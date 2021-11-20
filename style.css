@@ -94,7 +94,7 @@
     section {
       padding: 60px;
       align-content: center;
-      display: grid;
+      display: flex;
       flex-wrap: wrap;
       flex: 1 
     }
