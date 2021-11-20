@@ -1,13 +1,8 @@
-:root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
-  }
-  
-  * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      flex-wrap: wrap;
     }
     
     body {
@@ -84,6 +79,7 @@
       color: var(--secondary-color);
       font-size: 30px;
       margin: 0;
+      justify-content: center;
     }
     
     footer div {
@@ -104,6 +100,7 @@
     }
     address {
       text-align: center;
+      justify-content: center;
     }
     
     /* Hero Style Start */
@@ -121,21 +118,20 @@
       background-position: 80%;
     }
     .galaxybg1 {
-      display: flexbox
+      display: flex;
+      flex-wrap: wrap;
     }
-    
+    .responsive {
+      width: fit-content;
+      height: auto;
+      justify-content: center;
+    }
     .runbuddypic {
       display: flex;
       flex-wrap: wrap;
       height: 200px; 
       width: 200px;
     }
-    
-    .checkbox-wrapper input + label::after, 
-  .radio-wrapper input + label::after {
-    content: none;
-  } 
-    
     .section-title {
       font-size: 48px;
       color: #024e76;
@@ -160,31 +156,6 @@
     #contact-me {
       text-align: center;
     }
-    .contact-info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text-align: center;
-    }
-    .contact-info > * {
-      flex: 1;
-      margin: 15px;
-      text-align: center;
-    }
-    .contact h2 {
-      color: #fce138;
-    }
-    .contact-info iframe {
-      height: 400px;
-    }
-    .contact-info div {
-      color: white;
-      text-align: center
-    }
-    .contact-info h3 {
-      color:#fce138;
-      font-size: 32px;
-    }
     .contact-info p, .contact-info address {
       margin: 20px 0;
       line-height: 1.5;
@@ -204,6 +175,10 @@
       padding-left: 250px;
       justify-content: center;
     }
+    fiv.profilepic img p {
+      display: flex;
+      flex-wrap: wrap;
+    }
     @media screen and (max-width: 980px) {
       header {
         padding-bottom: 0;
@@ -212,7 +187,6 @@
       }
       section {
         flex: 1
-        display: inline;
       }
       header h1 {
         width: 100%;
@@ -245,12 +219,17 @@
         width: fit-content;
         height: fit-content;
       }
+      .responsive {
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+      }
       .section-title {
         width: 80%;
       }
       .intro p {
         width: 100%;
-        display: inline:
+        display: inline;
       }
      @media screen and (max-width: 768px) {
       section {
@@ -258,5 +237,5 @@
       }
       .intro p {
         width: 100%;
-        display: inline:
-      }
+        display: inline;
+      }}}
