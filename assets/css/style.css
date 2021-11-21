@@ -255,6 +255,7 @@
     .contact-info iframe {
       flex: 1 100%;
     }
+  }
   
   @media screen and (max-width: 768px) {
     section {
@@ -310,4 +311,4 @@
     .contact-form {
       order: 3;
     }
-  }}
+  }
