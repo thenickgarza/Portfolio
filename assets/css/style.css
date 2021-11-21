@@ -1,463 +1,313 @@
-:root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   }
   
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/galaxybg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+  /* apply styles to <header> */
+  header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/galaxybg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  header a {
+    text-decoration: none;
+    color: #32ff00;
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  header nav ul li a:hover {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+  footer {
+    width: 100%;
+    padding: 40px 35px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+  }
+  
+  footer h2 {
+    color: #32ff00;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: #024e76;
+  }
+  
+  section {
+    padding: 80px;
+    background-image: url("../images/galaxybg.jpg");
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid white;
+  }
+  
+  .glaxybg {
+    display: flex;
     
-    body {
-      /* more on this crazy alphanumerical value in a minute! */
-      color: var(--tertiary-color);
-      font-family: Helvetica, Arial, sans-serif;
-      background-image: url("../images/galaxybg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-position: 80%;
-      z-index: 9999;
+  }
+   .runbuddypic a img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    float: left;
     }
-    
-    /* apply styles to <header> */
-    header {
-      padding: 20px 35px;
-      background-color: var(--tertiary-color);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      background-image: url("../images/galaxybg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-position: 80%;
-      z-index: 9999;
-    }
-    
-    header h1 {
-      font-weight: bold;
-      font-size: 36px;
-      color: var(--primary-color);
-      margin: 0;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    header a {
-      text-decoration: none;
-      color: #32ff00;
-    }
-    
-    header nav {
-      margin: 7px 0;
-    }
-    
-    header nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-    }
-    
-    header nav ul li a {
-      padding: 10px 15px;
-      font-weight: lighter;
-      font-size: 1.55vw;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    header nav ul li a:hover {
-      background: black;
+   .hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;  
+  }
+  .intro h2 {
+    text-align: center;
+    display: inline-grid; 
+  }
+  .intro p {
+      line-height: 1.7;
       color: white;
-      border-radius: 15px;
-      text-shadow: none;
-    }
-    
-    footer {
-      /* background: var(--primary-color); */
-      width: 100%;
-      padding: 40px 35px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      /* display: flex; */
-      /* background-image: url("../images/galaxybg.jpg"); */
-    }
-    
-    footer h2 {
-      color: #32ff00;
-      font-size: 30px;
-      margin: 0;
-    }
-    
-    footer div {
-      line-height: 1.5;
-      text-align: right;
-    }
-    
-    footer a {
-      color: #024e76;
-    }
-    
-    section {
-      padding: 80px;
-      background-image: url("../images/galaxybg.jpg");
-      height: auto;
-      width: auto;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-position: 80%;
-      display: flex;
-      justify-content: space-between;
-      border-top: solid white;
-    }
-    
-    .glaxybg {
-      display: flex;
-      
-    }
-    
-
-    .runbuddypic a img {
-      display: flex;
-      width: 200px;
-      height: 200px;
-      overflow: hidden;
-      position: relative;
-      margin: 10px;
-      float: left;
-      
-    }
-    
-    /* Hero Style Start */
-    .hero {
-      background-image: url("../images/galaxybg.jpg");
-      height: auto;
-      width: auto;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-position: 80%;
-    }
-    .hero-cta {
-      width: 35%;
-      text-align: right;
-      margin: 3.5%;
-      color: #fff;
-      font-size: 18px;
-      line-height: 1.2;
-    }
-  
-    /* Hero Style End */
-  
-    .form-input:focus {
-      background-color: rgba(255, 255, 255, 1);
-      outline: none;
-    }
-    
-    .hero-form label {
-      margin: 0 5px;
-    }
-    
-    .hero-form button {
-      color: #fce138;
-      background-color: #024e76;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 10px
-    }
-  
-    .hero-form button:hover {
-      background-color: #39a6b2;
-    }
-  
-    .checkbox-wrapper input, .radio-wrapper input {
-      opacity: 0;
-    }
-  
-    .checkbox-wrapper label, .radio-wrapper label {
-      position: relative;
-      left: auto;
-      margin: auto;
-      line-height: 1.6;
-    }
-  
-    .checkbox-wrapper label::before, .radio-wrapper label::before {
-      content: "";
-      height: 20px;
-      width: 20px;
-      background: rgba(255, 255, 255, 0.75);  
-      border: 1px solid #024e76;  
-      position: absolute;
-      top: -4px;
-      left: -23px;
-    }
-  
-  
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
-    content: "";
-  }
-  
-    .intro h2 {
-      text-align: center;
-      display: inline-grid;
-    }
-    .intro p {
-        line-height: 1.7;
-        color: white;
-        width: 80%;
-        font-size: 20px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
-    .section-title {
-       font-size: 48px;
-       color: white;
-       width: 50%;
-       text-decoration: underline 5px #32ff00;
-       align-content: center;
-    }
-    .primary-border {
-      border-color: black;
-    }
-    .secondary-border {
-      border-color: #39a6b2;
-    }
-    .step {
-      margin: 50px auto;
-      padding-bottom: 50px;
       width: 80%;
-      border-bottom: 1px solid #39a6b2;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .step:last-child {
-      border-bottom: none;
-    }
-    .step-info {
-      flex: 2 70%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .step-img {
-      flex: 1 12%;
-      margin-right: 20px;
-    }
-    .step-img img {
-      max-width: 100%
-    }
-    .step-text {
-      flex: 12;
-    }
-    .step h3 {
-        color: #024e76;
-        font-size: 46px;
-        flex: 1 30%;
-    }
-    .step-text p {
-        color: #39a6b2;
-        font-size: 18px;
-    }
-    .step-text h4 {
-      font-size: 26px;
-      line-height: 1.5;
-      color: #024e76;
-    }
-    .trainers {
-      width: 100%;
+      font-size: 20px;
       margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+      text-align: center;
+      align-self: center;
+  } 
+  .section-title {
+     font-size: 48px;
+     color: white;
+     width: 50%;
+     text-decoration: underline 5px #32ff00;
+     align-content: center;
+  }
+  .primary-border {
+    border-color: black;
+  }
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+  .contact-info {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+  .contact h2 {
+    color: white;
+  }
+  .contact-info iframe {
+    height: 400px;
+  }
+  .contact-info div {
+    color: white;
+    text-decoration: underline;
+  }
+  .contact-info h3 {
+    color: white;
+    font-size: 45px;
+  }
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: large;
+    font-style: normal;
+    flex-wrap: wrap;
+  }
+  .contact-info a {
+    color: white;
+  }
+  .respnsive {
+    max-width: 50%;
+    height: auto;
+  }
+  .flex-row {
+    display: grid;
+    flex-wrap: wrap;
+    table-layout: auto;
+  }
+  @media screen and (max-width: 980px) {
+    body {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
 
-    
-    .contact-info {
-      justify-content: space-between;
-      flex-wrap: wrap;
     }
-    .contact-info > * {
-      flex: 1;
-      margin: 15px;
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
     }
-    .contact h2 {
-      color: white;
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    header nav ul li a {
+      font-size: 20px;
+    }
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    #about-me {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      align-content: center;
+    }
+    #my-work {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      align-content: center;
+    }
+    #contact-me {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      align-content: center;
+    }
+    .hero-cta, .hero-form {
+      width: 100%;
+      text-align: center;
+    }
+    .hero-form {
+      width: 100%;
+    }
+    .section-title {
+      width: 80%;
+    }
+    .trainer {
+      flex: 0 70%;
     }
     .contact-info iframe {
-      height: 400px;
-    }
-    .contact-info div {
-      color: white;
-      text-decoration: underline;
-    }
-    .contact-info h3 {
-      color: white;
-      font-size: 45px;
-    }
-    .contact-info p, .contact-info address {
-      margin: 20px 0;
-      line-height: 1.5;
-      font-size: large;
-      font-style: normal;
-      flex-wrap: wrap;
-    }
-    .contact-info a {
-      color: white;
-    }
-    .contact-form input, .contact-form textarea {
-      border: 1px solid white;
-      display: block;
-      padding: 7px 15px;
-      font-size: 16px
-      color white;
-      width: 100%;
-      margin-bottom: 15px;
-      margin-top: 5px;
-      border-radius: 10px;
-      background-color: rgba(255,255,255, 0.75);
-    }
-    .contact-form input:focus, .contact-form textarea:focus {
-      background-color: rgba(255,255,255, 1);
-      outline: none;
-    }
-    .contact-form button {
-      width: 100%;
-      border: none;
-      background: #fce138;
-      color: #024e76;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 16px;
-      border-radius: 10px;
+      flex: 1 100%;
     }
   
-    .contact-form button:hover {
-      color: #fce138;
-      background: #39a6b2;
-    }
-    .flex-row {
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
       display: flex;
       flex-wrap: wrap;
+      margin: 30px 30px 30px 30px;
     }
-    @media screen and (max-width: 980px) {
-      header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-      }
-      header h1 {
-        width: 100%;
-        text-align: center;
-      }
-      header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-      }
-      header nav ul li a {
-        font-size: 20px;
-      }
-      footer h2, footer div {
-        text-align: center;
-        width: 100%;
-      }
-      #about-me {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        align-content: center;
-      }
-      #my-work {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        align-content: center;
-      }
-      #contact-me {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-        align-content: center;
-      }
-      .hero-cta, .hero-form {
-        width: 100%;
-        text-align: center;
-      }
-      .hero-form {
-        width: 100%;
-      }
-      .section-title {
-        width: 80%;
-      }
-      .trainer {
-        flex: 0 70%;
-      }
-      .contact-info iframe {
-        flex: 1 100%;
-      }
-    
-    @media screen and (max-width: 768px) {
-      section {
-        padding: 30px 15px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px 30px 30px 30px;
-      }
-      .step h3 {
-        flex: 1 100%;
-        text-align: center;
-      }
-      .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-      }
-      .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-      }
-      .step-text {
-        flex: 100%;
-      }
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
     }
-    @media  screen and (max-width: 575px) {
-      .hero-form button {
-        width: 100%;
-      }
-    
-      .section-title {
-        width: 95%;
-      }
-    
-      .intro p {
-        width: 100%;
-      }
-    
-      .trainer {
-        flex: 0 100%;
-      }
-    
-      .contact-info {
-        text-align: center
-        flex-wrap: wrap;
-      }
-    
-      .contact-info > * {
-        flex: 1 100%;
-      }
-      .contact-form {
-        order: 3;
-      }
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .step-text {
+      flex: 100%;
+    }
+  }
+  @media  screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center
+      /* flex-wrap: wrap; */
+    }
+  
+    .contact-info > * {
+      flex: 1 100%;
+    }
+    .contact-form {
+      order: 3;
+    }
+  }}
