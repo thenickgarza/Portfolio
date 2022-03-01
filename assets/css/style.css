@@ -189,9 +189,8 @@
     height: auto;
   }
   .flex-row {
-    display: grid;
-    flex-wrap: wrap;
-    table-layout: auto;
+    display: flex;
+    
   }
   @media screen and (max-width: 980px) {
     body {
